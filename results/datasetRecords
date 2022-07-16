@@ -1,0 +1,53 @@
+C:\Users\49323\AppData\Local\Programs\Python\Python36\python.exe C:/Users/49323/Desktop/learningNotes/semester2-learning-notes/COMP90049IML/Assignment3/pipeline/EDA.py
+--------------------training data shape ------------------
+(133795, 3)
+============================training data info============================
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 133795 entries, 0 to 133794
+Data columns (total 3 columns):
+ #   Column  Non-Null Count   Dtype
+---  ------  --------------   -----
+ 0   region  133795 non-null  object
+ 1   user    133795 non-null  object
+ 2   tweet   133795 non-null  object
+dtypes: object(3)
+memory usage: 3.1+ MB
+None
+-----------------------------------------------
+           region  ...                                              tweet
+count      133795  ...                                             133795
+unique          4  ...                                             133330
+top     NORTHEAST  ...  RT @USER_5aac9e88: Sometimes u've gotta let go...
+freq        52582  ...                                                 13
+
+[4 rows x 3 columns]
+      region  tweet
+1  NORTHEAST  52582
+2      SOUTH  49901
+3       WEST  16228
+0    MIDWEST  15084
+--------------------validation data shape ------------------
+(11475, 3)
+--------------------test data shape ------------------
+(12018, 3)
+============================test data info============================
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 12018 entries, 0 to 12017
+Data columns (total 3 columns):
+ #   Column  Non-Null Count  Dtype
+---  ------  --------------  -----
+ 0   region  12018 non-null  object
+ 1   user    12018 non-null  object
+ 2   tweet   12018 non-null  object
+dtypes: object(3)
+memory usage: 281.8+ KB
+None
+-----------------------------------------------
+       region           user                       tweet
+count   12018          12018                       12018
+unique      1            300                       12001
+top         ?  USER_dc78bf37  @USER_bf78d47d hey what up
+freq    12018            188                           2
+libpng warning: iCCP: cHRM chunk does not match sRGB
+
+Process finished with exit code 0

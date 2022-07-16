@@ -1,0 +1,70 @@
+
+
+the performance matrix of AdaBoost :
+the program start run at 1620284309.7592235
+the program end run at 1620284313.3663492 , used: 3.607125759124756 seconds
+     the accuracy of validation test: 0.38605664488017427
+     the f1 score of validation test: 0.20042942998401153
+
+the performance matrix of AdaBoost :
+the program start run at 1620284313.4730387
+the program end run at 1620284320.434609 , used: 6.9615702629089355 seconds
+     the accuracy of validation test: 0.3940740740740741
+     the f1 score of validation test: 0.21698922443307606
+
+the performance matrix of AdaBoost :
+the program start run at 1620284320.5612874
+the program end run at 1620284331.108124 , used: 10.546836614608765 seconds
+     the accuracy of validation test: 0.4016557734204793
+     the f1 score of validation test: 0.22444723168666464
+
+the performance matrix of AdaBoost :
+the program start run at 1620284331.268775
+the program end run at 1620284345.260997 , used: 13.99222207069397 seconds
+     the accuracy of validation test: 0.4025272331154684
+     the f1 score of validation test: 0.22906626066414887
+
+the performance matrix of AdaBoost :
+the program start run at 1620284345.4424274
+the program end run at 1620284362.963446 , used: 17.521018505096436 seconds
+     the accuracy of validation test: 0.40278867102396515
+     the f1 score of validation test: 0.22833165780927
+
+the performance matrix of AdaBoost :
+the program start run at 1620284363.2067177
+the program end run at 1620284384.3017664 , used: 21.095048666000366 seconds
+     the accuracy of validation test: 0.40078431372549017
+     the f1 score of validation test: 0.22710252013029106
+
+the performance matrix of AdaBoost :
+the program start run at 1620284384.5661077
+the program end run at 1620284409.0288727 , used: 24.462764978408813 seconds
+     the accuracy of validation test: 0.4047930283224401
+     the f1 score of validation test: 0.2292755165288294
+
+the performance matrix of AdaBoost :
+the program start run at 1620284409.2911093
+the program end run at 1620284436.7979243 , used: 27.50681495666504 seconds
+     the accuracy of validation test: 0.40601307189542485
+     the f1 score of validation test: 0.23030356438529823
+
+the performance matrix of AdaBoost :
+the program start run at 1620284437.0991628
+the program end run at 1620284471.2732275 , used: 34.17406463623047 seconds
+     the accuracy of validation test: 0.40705882352941175
+     the f1 score of validation test: 0.23164206736661316
+
+the performance matrix of AdaBoost :
+the program start run at 1620284471.612277
+the program end run at 1620284513.267477 , used: 41.65520000457764 seconds
+     the accuracy of validation test: 0.4088888888888889
+     the f1 score of validation test: 0.2330309749630614
+
+the performance matrix of AdaBoost :
+the program start run at 1620284513.7023375
+the program end run at 1620284562.4726999 , used: 48.77036237716675 seconds
+     the accuracy of validation test: 0.41272331154684094
+     the f1 score of validation test: 0.23534792470513347
+
+
+Process finished with exit code 0

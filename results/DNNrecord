@@ -1,0 +1,418 @@
+C:\Users\49323\AppData\Local\Programs\Python\Python36\python.exe C:/Users/49323/Desktop/learningNotes/semester2-learning-notes/COMP90049IML/Assignment3/pipeline/tfidf_tensorflow.py
+2021-05-07 11:08:49.316493: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library cudart64_110.dll
+            0         1       2         3       4   ...   51   52   53   54   55
+0       1875.0  0.674740  1111.0  0.738055     0.0  ...  0.0  0.0  0.0  0.0  0.0
+1        541.0  1.000000     0.0  0.000000     0.0  ...  0.0  0.0  0.0  0.0  0.0
+2       1690.0  0.474575  1072.0  0.424264   885.0  ...  0.0  0.0  0.0  0.0  0.0
+3       1460.0  0.511325  1357.0  0.594413  1091.0  ...  0.0  0.0  0.0  0.0  0.0
+4       1973.0  0.331390  1446.0  0.492062  1308.0  ...  0.0  0.0  0.0  0.0  0.0
+...        ...       ...     ...       ...     ...  ...  ...  ...  ...  ...  ...
+133790  1955.0  0.252162  1331.0  0.221498   948.0  ...  0.0  0.0  0.0  0.0  0.0
+133791  1706.0  0.323422  1700.0  0.495625  1448.0  ...  0.0  0.0  0.0  0.0  0.0
+133792  1496.0  0.655756   829.0  0.706438    69.0  ...  0.0  0.0  0.0  0.0  0.0
+133793  1796.0  0.269472  1713.0  0.798690  1600.0  ...  0.0  0.0  0.0  0.0  0.0
+133794    69.0  1.000000     0.0  0.000000     0.0  ...  0.0  0.0  0.0  0.0  0.0
+
+[133795 rows x 56 columns]
+2021-05-07 11:09:02.873388: I tensorflow/compiler/jit/xla_cpu_device.cc:41] Not creating XLA devices, tf_xla_enable_xla_devices not set
+2021-05-07 11:09:02.875370: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library nvcuda.dll
+2021-05-07 11:09:03.970390: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 0 with properties:
+pciBusID: 0000:01:00.0 name: NVIDIA GeForce RTX 2060 computeCapability: 7.5
+coreClock: 1.2GHz coreCount: 30 deviceMemorySize: 6.00GiB deviceMemoryBandwidth: 312.97GiB/s
+2021-05-07 11:09:03.971136: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library cudart64_110.dll
+2021-05-07 11:09:03.981636: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library cublas64_11.dll
+2021-05-07 11:09:03.982014: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library cublasLt64_11.dll
+2021-05-07 11:09:03.988238: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library cufft64_10.dll
+2021-05-07 11:09:03.991022: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library curand64_10.dll
+2021-05-07 11:09:04.005461: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library cusolver64_10.dll
+2021-05-07 11:09:04.010334: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library cusparse64_11.dll
+2021-05-07 11:09:04.012439: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library cudnn64_8.dll
+2021-05-07 11:09:04.012913: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1862] Adding visible gpu devices: 0
+2021-05-07 11:09:04.013609: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2021-05-07 11:09:04.015210: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 0 with properties:
+pciBusID: 0000:01:00.0 name: NVIDIA GeForce RTX 2060 computeCapability: 7.5
+coreClock: 1.2GHz coreCount: 30 deviceMemorySize: 6.00GiB deviceMemoryBandwidth: 312.97GiB/s
+2021-05-07 11:09:04.016069: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library cudart64_110.dll
+2021-05-07 11:09:04.016439: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library cublas64_11.dll
+2021-05-07 11:09:04.016802: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library cublasLt64_11.dll
+2021-05-07 11:09:04.017206: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library cufft64_10.dll
+2021-05-07 11:09:04.017595: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library curand64_10.dll
+2021-05-07 11:09:04.018060: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library cusolver64_10.dll
+2021-05-07 11:09:04.018506: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library cusparse64_11.dll
+2021-05-07 11:09:04.018937: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library cudnn64_8.dll
+2021-05-07 11:09:04.019461: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1862] Adding visible gpu devices: 0
+2021-05-07 11:09:04.504771: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1261] Device interconnect StreamExecutor with strength 1 edge matrix:
+2021-05-07 11:09:04.505084: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1267]      0
+2021-05-07 11:09:04.505283: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1280] 0:   N
+2021-05-07 11:09:04.505674: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1406] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 4720 MB memory) -> physical GPU (device: 0, name: NVIDIA GeForce RTX 2060, pci bus id: 0000:01:00.0, compute capability: 7.5)
+2021-05-07 11:09:04.507024: I tensorflow/compiler/jit/xla_gpu_device.cc:99] Not creating XLA devices, tf_xla_enable_xla_devices not set
+Model: "sequential"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #
+=================================================================
+embedding (Embedding)        (None, 56, 128)           1280000
+_________________________________________________________________
+global_average_pooling1d (Gl (None, 128)               0
+_________________________________________________________________
+dense (Dense)                (None, 16)                2064
+_________________________________________________________________
+dropout (Dropout)            (None, 16)                0
+_________________________________________________________________
+dense_1 (Dense)              (None, 16)                272
+_________________________________________________________________
+dense_2 (Dense)              (None, 4)                 68
+=================================================================
+Total params: 1,282,404
+Trainable params: 1,282,404
+Non-trainable params: 0
+_________________________________________________________________
+2021-05-07 11:09:04.863490: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:116] None of the MLIR optimization passes are enabled (registered 2)
+Epoch 1/6
+2021-05-07 11:09:05.331451: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library cublas64_11.dll
+2021-05-07 11:09:05.793109: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library cublasLt64_11.dll
+4182/4182 [==============================] - 49s 11ms/step - loss: 1.2330 - accuracy: 0.4110 - val_loss: 1.2192 - val_accuracy: 0.4617
+Epoch 2/6
+4182/4182 [==============================] - 48s 12ms/step - loss: 1.1754 - accuracy: 0.4717 - val_loss: 1.2156 - val_accuracy: 0.4593
+Epoch 3/6
+4182/4182 [==============================] - 48s 11ms/step - loss: 1.1652 - accuracy: 0.4786 - val_loss: 1.2177 - val_accuracy: 0.4566
+Epoch 4/6
+4182/4182 [==============================] - 49s 12ms/step - loss: 1.1549 - accuracy: 0.4825 - val_loss: 1.2208 - val_accuracy: 0.4525
+Epoch 5/6
+4182/4182 [==============================] - 48s 11ms/step - loss: 1.1547 - accuracy: 0.4823 - val_loss: 1.2193 - val_accuracy: 0.4586
+Epoch 6/6
+4182/4182 [==============================] - 47s 11ms/step - loss: 1.1449 - accuracy: 0.4877 - val_loss: 1.2237 - val_accuracy: 0.4546
+the performance matrix of model1 :
+[[0.14043392 0.34929115 0.39050806 0.11976687]
+ [0.15471928 0.32980222 0.35527012 0.16020833]
+ [0.13198794 0.3040653  0.43860874 0.12533802]
+ ...
+ [0.11536539 0.38296598 0.36105332 0.14061528]
+ [0.06642716 0.5132594  0.28740436 0.13290906]
+ [0.11455712 0.3831413  0.4118067  0.09049483]]
+
+Process finished with exit code 0
+C:\Users\49323\AppData\Local\Programs\Python\Python36\python.exe C:/Users/49323/Desktop/learningNotes/semester2-learning-notes/COMP90049IML/Assignment3/pipeline/word_tensorflow.py
+2021-05-07 11:15:35.723003: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library cudart64_110.dll
+            0    1       2    3       4    5   ...   50   51   52   53   54   55
+0       1111.0  1.0  1875.0  1.0     0.0  0.0  ...  0.0  0.0  0.0  0.0  0.0  0.0
+1        541.0  1.0     0.0  0.0     0.0  0.0  ...  0.0  0.0  0.0  0.0  0.0  0.0
+2         64.0  1.0   578.0  1.0   885.0  1.0  ...  0.0  0.0  0.0  0.0  0.0  0.0
+3         69.0  1.0   608.0  1.0  1091.0  1.0  ...  0.0  0.0  0.0  0.0  0.0  0.0
+4          0.0  1.0   329.0  1.0   754.0  1.0  ...  0.0  0.0  0.0  0.0  0.0  0.0
+...        ...  ...     ...  ...     ...  ...  ...  ...  ...  ...  ...  ...  ...
+133790    19.0  1.0    57.0  1.0    59.0  1.0  ...  0.0  0.0  0.0  0.0  0.0  0.0
+133791    57.0  1.0    69.0  2.0   835.0  1.0  ...  0.0  0.0  0.0  0.0  0.0  0.0
+133792    69.0  1.0   829.0  1.0  1496.0  1.0  ...  0.0  0.0  0.0  0.0  0.0  0.0
+133793    69.0  4.0   112.0  1.0   700.0  1.0  ...  0.0  0.0  0.0  0.0  0.0  0.0
+133794    69.0  1.0     0.0  0.0     0.0  0.0  ...  0.0  0.0  0.0  0.0  0.0  0.0
+
+[133795 rows x 56 columns]
+2021-05-07 11:15:48.208807: I tensorflow/compiler/jit/xla_cpu_device.cc:41] Not creating XLA devices, tf_xla_enable_xla_devices not set
+2021-05-07 11:15:48.211242: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library nvcuda.dll
+2021-05-07 11:15:49.287575: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 0 with properties:
+pciBusID: 0000:01:00.0 name: NVIDIA GeForce RTX 2060 computeCapability: 7.5
+coreClock: 1.2GHz coreCount: 30 deviceMemorySize: 6.00GiB deviceMemoryBandwidth: 312.97GiB/s
+2021-05-07 11:15:49.288172: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library cudart64_110.dll
+2021-05-07 11:15:49.294358: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library cublas64_11.dll
+2021-05-07 11:15:49.294852: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library cublasLt64_11.dll
+2021-05-07 11:15:49.300474: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library cufft64_10.dll
+2021-05-07 11:15:49.302427: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library curand64_10.dll
+2021-05-07 11:15:49.311400: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library cusolver64_10.dll
+2021-05-07 11:15:49.314748: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library cusparse64_11.dll
+2021-05-07 11:15:49.316171: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library cudnn64_8.dll
+2021-05-07 11:15:49.316512: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1862] Adding visible gpu devices: 0
+2021-05-07 11:15:49.316982: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2021-05-07 11:15:49.318240: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 0 with properties:
+pciBusID: 0000:01:00.0 name: NVIDIA GeForce RTX 2060 computeCapability: 7.5
+coreClock: 1.2GHz coreCount: 30 deviceMemorySize: 6.00GiB deviceMemoryBandwidth: 312.97GiB/s
+2021-05-07 11:15:49.318875: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library cudart64_110.dll
+2021-05-07 11:15:49.319147: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library cublas64_11.dll
+2021-05-07 11:15:49.319428: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library cublasLt64_11.dll
+2021-05-07 11:15:49.319746: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library cufft64_10.dll
+2021-05-07 11:15:49.320034: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library curand64_10.dll
+2021-05-07 11:15:49.320334: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library cusolver64_10.dll
+2021-05-07 11:15:49.320605: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library cusparse64_11.dll
+2021-05-07 11:15:49.320901: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library cudnn64_8.dll
+2021-05-07 11:15:49.321214: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1862] Adding visible gpu devices: 0
+2021-05-07 11:15:49.805850: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1261] Device interconnect StreamExecutor with strength 1 edge matrix:
+2021-05-07 11:15:49.806142: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1267]      0
+2021-05-07 11:15:49.806316: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1280] 0:   N
+2021-05-07 11:15:49.806632: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1406] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 4720 MB memory) -> physical GPU (device: 0, name: NVIDIA GeForce RTX 2060, pci bus id: 0000:01:00.0, compute capability: 7.5)
+2021-05-07 11:15:49.808002: I tensorflow/compiler/jit/xla_gpu_device.cc:99] Not creating XLA devices, tf_xla_enable_xla_devices not set
+Model: "sequential"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #
+=================================================================
+embedding (Embedding)        (None, 56, 128)           1280000
+_________________________________________________________________
+global_average_pooling1d (Gl (None, 128)               0
+_________________________________________________________________
+dense (Dense)                (None, 16)                2064
+_________________________________________________________________
+dropout (Dropout)            (None, 16)                0
+_________________________________________________________________
+dense_1 (Dense)              (None, 16)                272
+_________________________________________________________________
+dropout_1 (Dropout)          (None, 16)                0
+_________________________________________________________________
+dense_2 (Dense)              (None, 4)                 68
+=================================================================
+Total params: 1,282,404
+Trainable params: 1,282,404
+Non-trainable params: 0
+_________________________________________________________________
+2021-05-07 11:15:50.177873: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:116] None of the MLIR optimization passes are enabled (registered 2)
+Epoch 1/6
+2021-05-07 11:15:50.611526: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library cublas64_11.dll
+2021-05-07 11:15:51.112721: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library cublasLt64_11.dll
+4182/4182 [==============================] - 45s 11ms/step - loss: 1.2434 - accuracy: 0.4100 - val_loss: 1.2173 - val_accuracy: 0.4593
+Epoch 2/6
+4182/4182 [==============================] - 44s 10ms/step - loss: 1.1891 - accuracy: 0.4698 - val_loss: 1.2154 - val_accuracy: 0.4560
+Epoch 3/6
+4182/4182 [==============================] - 43s 10ms/step - loss: 1.1760 - accuracy: 0.4755 - val_loss: 1.2113 - val_accuracy: 0.4614
+Epoch 4/6
+4182/4182 [==============================] - 43s 10ms/step - loss: 1.1718 - accuracy: 0.4829 - val_loss: 1.2124 - val_accuracy: 0.4586
+Epoch 5/6
+4182/4182 [==============================] - 43s 10ms/step - loss: 1.1691 - accuracy: 0.4816 - val_loss: 1.2115 - val_accuracy: 0.4610
+Epoch 6/6
+4182/4182 [==============================] - 44s 11ms/step - loss: 1.1658 - accuracy: 0.4837 - val_loss: 1.2156 - val_accuracy: 0.4652
+the performance matrix of model1 :
+[[0.13175225 0.33722186 0.39337578 0.1376501 ]
+ [0.13071574 0.34658056 0.37467572 0.14802799]
+ [0.10814163 0.38298568 0.4135124  0.09536027]
+ ...
+ [0.10509623 0.40323114 0.39219815 0.09947444]
+ [0.06474559 0.551678   0.3057966  0.07777982]
+ [0.09831794 0.42070365 0.38629153 0.09468686]]
+
+Process finished with exit code 0
+C:\Users\49323\AppData\Local\Programs\Python\Python36\python.exe C:/Users/49323/Desktop/learningNotes/semester2-learning-notes/COMP90049IML/Assignment3/pipeline/tfidf_tensorflow_coded.py
+2021-05-07 11:20:46.712282: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library cudart64_110.dll
+loading data......
+training data:
+           0     1     2     3     4     ...  2033  2034  2035  2036  2037
+0       0.00000   0.0   0.0   0.0   0.0  ...   0.0   0.0   0.0   0.0   0.0
+1       0.00000   0.0   0.0   0.0   0.0  ...   0.0   0.0   0.0   0.0   0.0
+2       0.00000   0.0   0.0   0.0   0.0  ...   0.0   0.0   0.0   0.0   0.0
+3       0.00000   0.0   0.0   0.0   0.0  ...   0.0   0.0   0.0   0.0   0.0
+4       0.15231   0.0   0.0   0.0   0.0  ...   0.0   0.0   0.0   0.0   0.0
+...         ...   ...   ...   ...   ...  ...   ...   ...   ...   ...   ...
+133790  0.00000   0.0   0.0   0.0   0.0  ...   0.0   0.0   0.0   0.0   0.0
+133791  0.00000   0.0   0.0   0.0   0.0  ...   0.0   0.0   0.0   0.0   0.0
+133792  0.00000   0.0   0.0   0.0   0.0  ...   0.0   0.0   0.0   0.0   0.0
+133793  0.00000   0.0   0.0   0.0   0.0  ...   0.0   0.0   0.0   0.0   0.0
+133794  0.00000   0.0   0.0   0.0   0.0  ...   0.0   0.0   0.0   0.0   0.0
+
+[133795 rows x 2038 columns]
+training labels:
+0         NORTHEAST
+1         NORTHEAST
+2         NORTHEAST
+3         NORTHEAST
+4         NORTHEAST
+            ...
+133790        SOUTH
+133791        SOUTH
+133792        SOUTH
+133793        SOUTH
+133794        SOUTH
+Name: region, Length: 133795, dtype: object
+[[0. 0. 0. ... 0. 0. 0.]
+ [0. 0. 0. ... 0. 0. 0.]
+ [0. 0. 0. ... 0. 0. 0.]
+ ...
+ [0. 0. 0. ... 0. 0. 0.]
+ [0. 0. 0. ... 0. 0. 0.]
+ [0. 0. 0. ... 0. 0. 0.]]
+(133795, 409)
+2021-05-07 11:22:51.343030: I tensorflow/compiler/jit/xla_cpu_device.cc:41] Not creating XLA devices, tf_xla_enable_xla_devices not set
+2021-05-07 11:22:51.344436: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library nvcuda.dll
+2021-05-07 11:22:52.425556: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 0 with properties:
+pciBusID: 0000:01:00.0 name: NVIDIA GeForce RTX 2060 computeCapability: 7.5
+coreClock: 1.2GHz coreCount: 30 deviceMemorySize: 6.00GiB deviceMemoryBandwidth: 312.97GiB/s
+2021-05-07 11:22:52.426318: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library cudart64_110.dll
+2021-05-07 11:22:52.433749: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library cublas64_11.dll
+2021-05-07 11:22:52.434061: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library cublasLt64_11.dll
+2021-05-07 11:22:52.438723: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library cufft64_10.dll
+2021-05-07 11:22:52.440641: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library curand64_10.dll
+2021-05-07 11:22:52.450244: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library cusolver64_10.dll
+2021-05-07 11:22:52.463387: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library cusparse64_11.dll
+2021-05-07 11:22:52.464836: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library cudnn64_8.dll
+2021-05-07 11:22:52.465346: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1862] Adding visible gpu devices: 0
+2021-05-07 11:22:52.465799: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2021-05-07 11:22:52.466988: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 0 with properties:
+pciBusID: 0000:01:00.0 name: NVIDIA GeForce RTX 2060 computeCapability: 7.5
+coreClock: 1.2GHz coreCount: 30 deviceMemorySize: 6.00GiB deviceMemoryBandwidth: 312.97GiB/s
+2021-05-07 11:22:52.467577: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library cudart64_110.dll
+2021-05-07 11:22:52.467870: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library cublas64_11.dll
+2021-05-07 11:22:52.468143: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library cublasLt64_11.dll
+2021-05-07 11:22:52.468431: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library cufft64_10.dll
+2021-05-07 11:22:52.468728: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library curand64_10.dll
+2021-05-07 11:22:52.469001: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library cusolver64_10.dll
+2021-05-07 11:22:52.469281: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library cusparse64_11.dll
+2021-05-07 11:22:52.469839: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library cudnn64_8.dll
+2021-05-07 11:22:52.470173: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1862] Adding visible gpu devices: 0
+2021-05-07 11:22:52.968491: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1261] Device interconnect StreamExecutor with strength 1 edge matrix:
+2021-05-07 11:22:52.968909: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1267]      0
+2021-05-07 11:22:52.969152: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1280] 0:   N
+2021-05-07 11:22:52.969594: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1406] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 4720 MB memory) -> physical GPU (device: 0, name: NVIDIA GeForce RTX 2060, pci bus id: 0000:01:00.0, compute capability: 7.5)
+2021-05-07 11:22:52.971400: I tensorflow/compiler/jit/xla_gpu_device.cc:99] Not creating XLA devices, tf_xla_enable_xla_devices not set
+Model: "sequential"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #
+=================================================================
+embedding (Embedding)        (None, 409, 256)          2560000
+_________________________________________________________________
+global_average_pooling1d (Gl (None, 256)               0
+_________________________________________________________________
+dense (Dense)                (None, 256)               65792
+_________________________________________________________________
+dense_1 (Dense)              (None, 128)               32896
+_________________________________________________________________
+dense_2 (Dense)              (None, 4)                 516
+=================================================================
+Total params: 2,659,204
+Trainable params: 2,659,204
+Non-trainable params: 0
+_________________________________________________________________
+2021-05-07 11:22:53.446434: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:116] None of the MLIR optimization passes are enabled (registered 2)
+Epoch 1/6
+2021-05-07 11:22:53.838879: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library cublas64_11.dll
+2021-05-07 11:22:54.343746: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library cublasLt64_11.dll
+4182/4182 [==============================] - 105s 25ms/step - loss: 1.2393 - accuracy: 0.3894 - val_loss: 1.2599 - val_accuracy: 0.3743
+Epoch 2/6
+4182/4182 [==============================] - 104s 25ms/step - loss: 1.2397 - accuracy: 0.3884 - val_loss: 1.2600 - val_accuracy: 0.3743
+Epoch 3/6
+4182/4182 [==============================] - 106s 25ms/step - loss: 1.2377 - accuracy: 0.3905 - val_loss: 1.2605 - val_accuracy: 0.3718
+Epoch 4/6
+4182/4182 [==============================] - 105s 25ms/step - loss: 1.2390 - accuracy: 0.3882 - val_loss: 1.2621 - val_accuracy: 0.3743
+Epoch 5/6
+4182/4182 [==============================] - 106s 25ms/step - loss: 1.2352 - accuracy: 0.3940 - val_loss: 1.2613 - val_accuracy: 0.3743
+Epoch 6/6
+4182/4182 [==============================] - 107s 26ms/step - loss: 1.2353 - accuracy: 0.3941 - val_loss: 1.2604 - val_accuracy: 0.3743
+the performance matrix of model1 :
+[[0.11980095 0.3865792  0.3731144  0.12050548]
+ [0.11980095 0.3865792  0.3731144  0.12050548]
+ [0.11980095 0.3865792  0.3731144  0.12050548]
+ ...
+ [0.11980095 0.3865792  0.3731144  0.12050548]
+ [0.11980095 0.3865792  0.3731144  0.12050548]
+ [0.11980095 0.3865792  0.3731144  0.12050548]]
+
+Process finished with exit code 0
+C:\Users\49323\AppData\Local\Programs\Python\Python36\python.exe C:/Users/49323/Desktop/learningNotes/semester2-learning-notes/COMP90049IML/Assignment3/pipeline/word_tensorflow_coded.py
+2021-05-07 12:43:06.148967: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library cudart64_110.dll
+loading data......
+training data:
+        0     1     2     3     4     5     ...  2032  2033  2034  2035  2036  2037
+0          0     0     0     0     0     0  ...     0     0     0     0     0     0
+1          0     0     0     0     0     0  ...     0     0     0     0     0     0
+2          0     0     0     0     0     0  ...     0     0     0     0     0     0
+3          0     0     0     0     0     0  ...     0     0     0     0     0     0
+4          1     0     0     0     0     0  ...     0     0     0     0     0     0
+...      ...   ...   ...   ...   ...   ...  ...   ...   ...   ...   ...   ...   ...
+133790     0     0     0     0     0     0  ...     0     0     0     0     0     0
+133791     0     0     0     0     0     0  ...     0     0     0     0     0     0
+133792     0     0     0     0     0     0  ...     0     0     0     0     0     0
+133793     0     0     0     0     0     0  ...     0     0     0     0     0     0
+133794     0     0     0     0     0     0  ...     0     0     0     0     0     0
+
+[133795 rows x 2038 columns]
+training labels:
+0         NORTHEAST
+1         NORTHEAST
+2         NORTHEAST
+3         NORTHEAST
+4         NORTHEAST
+            ...
+133790        SOUTH
+133791        SOUTH
+133792        SOUTH
+133793        SOUTH
+133794        SOUTH
+Name: region, Length: 133795, dtype: object
+[[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+(133795, 445)
+2021-05-07 12:45:28.934086: I tensorflow/compiler/jit/xla_cpu_device.cc:41] Not creating XLA devices, tf_xla_enable_xla_devices not set
+2021-05-07 12:45:28.936853: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library nvcuda.dll
+2021-05-07 12:45:30.081971: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 0 with properties:
+pciBusID: 0000:01:00.0 name: NVIDIA GeForce RTX 2060 computeCapability: 7.5
+coreClock: 1.2GHz coreCount: 30 deviceMemorySize: 6.00GiB deviceMemoryBandwidth: 312.97GiB/s
+2021-05-07 12:45:30.082517: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library cudart64_110.dll
+2021-05-07 12:45:30.091222: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library cublas64_11.dll
+2021-05-07 12:45:30.091506: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library cublasLt64_11.dll
+2021-05-07 12:45:30.096871: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library cufft64_10.dll
+2021-05-07 12:45:30.099066: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library curand64_10.dll
+2021-05-07 12:45:30.108544: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library cusolver64_10.dll
+2021-05-07 12:45:30.112123: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library cusparse64_11.dll
+2021-05-07 12:45:30.113546: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library cudnn64_8.dll
+2021-05-07 12:45:30.113915: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1862] Adding visible gpu devices: 0
+2021-05-07 12:45:30.114377: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2021-05-07 12:45:30.126640: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 0 with properties:
+pciBusID: 0000:01:00.0 name: NVIDIA GeForce RTX 2060 computeCapability: 7.5
+coreClock: 1.2GHz coreCount: 30 deviceMemorySize: 6.00GiB deviceMemoryBandwidth: 312.97GiB/s
+2021-05-07 12:45:30.127274: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library cudart64_110.dll
+2021-05-07 12:45:30.127612: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library cublas64_11.dll
+2021-05-07 12:45:30.127915: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library cublasLt64_11.dll
+2021-05-07 12:45:30.128239: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library cufft64_10.dll
+2021-05-07 12:45:30.128509: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library curand64_10.dll
+2021-05-07 12:45:30.128783: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library cusolver64_10.dll
+2021-05-07 12:45:30.129060: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library cusparse64_11.dll
+2021-05-07 12:45:30.129592: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library cudnn64_8.dll
+2021-05-07 12:45:30.129914: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1862] Adding visible gpu devices: 0
+2021-05-07 12:45:30.649559: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1261] Device interconnect StreamExecutor with strength 1 edge matrix:
+2021-05-07 12:45:30.649864: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1267]      0
+2021-05-07 12:45:30.650039: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1280] 0:   N
+2021-05-07 12:45:30.650388: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1406] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 4720 MB memory) -> physical GPU (device: 0, name: NVIDIA GeForce RTX 2060, pci bus id: 0000:01:00.0, compute capability: 7.5)
+2021-05-07 12:45:30.652118: I tensorflow/compiler/jit/xla_gpu_device.cc:99] Not creating XLA devices, tf_xla_enable_xla_devices not set
+Model: "sequential"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #
+=================================================================
+embedding (Embedding)        (None, 445, 256)          2560000
+_________________________________________________________________
+global_average_pooling1d (Gl (None, 256)               0
+_________________________________________________________________
+dense (Dense)                (None, 256)               65792
+_________________________________________________________________
+dense_1 (Dense)              (None, 128)               32896
+_________________________________________________________________
+dense_2 (Dense)              (None, 4)                 516
+=================================================================
+Total params: 2,659,204
+Trainable params: 2,659,204
+Non-trainable params: 0
+_________________________________________________________________
+2021-05-07 12:45:31.232270: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:116] None of the MLIR optimization passes are enabled (registered 2)
+Epoch 1/5
+2021-05-07 12:45:31.627717: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library cublas64_11.dll
+2021-05-07 12:45:32.137008: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library cublasLt64_11.dll
+4182/4182 [==============================] - 117s 28ms/step - loss: 1.2373 - accuracy: 0.3928 - val_loss: 1.2545 - val_accuracy: 0.4172
+Epoch 2/5
+4182/4182 [==============================] - 115s 27ms/step - loss: 1.2291 - accuracy: 0.4155 - val_loss: 1.2579 - val_accuracy: 0.4171
+Epoch 3/5
+4182/4182 [==============================] - 114s 27ms/step - loss: 1.2276 - accuracy: 0.4157 - val_loss: 1.2526 - val_accuracy: 0.4171
+Epoch 4/5
+4182/4182 [==============================] - 114s 27ms/step - loss: 1.2290 - accuracy: 0.4195 - val_loss: 1.2542 - val_accuracy: 0.4171
+Epoch 5/5
+4182/4182 [==============================] - 116s 28ms/step - loss: 1.2265 - accuracy: 0.4207 - val_loss: 1.2528 - val_accuracy: 0.4171
+the performance matrix of model1 :
+[[0.10823288 0.40704957 0.3668219  0.1178957 ]
+ [0.13187636 0.33760467 0.3899639  0.14055507]
+ [0.13187636 0.33760467 0.3899639  0.14055507]
+ ...
+ [0.13187636 0.33760467 0.3899639  0.14055507]
+ [0.10823288 0.40704957 0.3668219  0.11789567]
+ [0.10823286 0.40704954 0.36682191 0.11789569]]
+
+Process finished with exit code 0
